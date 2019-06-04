@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+.hands{
+    display: none;
+    
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+h3 {
+    margin: 30px 0;
+}
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center
+}
+.panel-left p {
+    font-size: 20px;
+}
+.panel h3 {
+    text-align: center;
+}
+h1,
+h3 {
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 35px;
+}
+.select {
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.select img {
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+}
+button {
+    display: block;
+    padding: 5px 20px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: bold;
+    margin: 10px auto;
+    transition: .3s;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: rgb(20, 20, 20);
+    color: white
+}
+span {
+    font-weight: bold;
+}
+
+/* mobile */
+@media (min-width: 320px) and (min-height: 568px){
+    h1 {
+        font-size: 30px;
+        margin: 10px   
+    }
+    .panel h3 {
+        font-size: 25px
+    }
+    .panel-right {
+        font-size: 18px  
+    } 
+} 
+
+@media (min-width: 768px) and (min-height: 1024px){
+    .hands{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -20%);
+        opacity: .2;
+    }
+}
+
+/* deskop */
+@media (min-width: 988px) and (min-height: 722px){
+    .hands{
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , 15%);
+        opacity: .2;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 768px){
+    .hands{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , 10%);
+        opacity: .2;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px){
+    h1 {
+        font-size: 40px;
+        margin: 10px   
+    }
+    .panel h3 {
+        font-size: 33px
+    }
+    .panel-right {
+        font-size: 25px  
+    } 
+    .hands{
+        transform: translate(-50% , -30%);
+    }
+}
+@media (min-width: 1366px) and (min-height: 1024px){
+    .panel-right {
+        font-size: 28px  
+    } 
+    .panel-left p {
+        font-size: 25px;
+    }
+}
+@media (min-width: 1372px) and (min-height: 937px){
+    .hands{
+        transform: translate(-50% , -10%);
+        height: 50%;
+        width: 50%
+    }
+}
